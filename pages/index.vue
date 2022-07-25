@@ -5,7 +5,7 @@
     </header>
 
     <main class="grid gap-2 md:grid-cols-2">
-      <SectionBox>
+      <SectionBox btnBoxClass="justify-between">
         <template v-slot:article>
           <img
             :src="setImage"
@@ -35,7 +35,7 @@
         </template>
       </SectionBox>
 
-      <SectionBox>
+      <SectionBox btnBoxClass="md:justify-end">
         <template v-slot:article>
           <pre class="h-full w-full px-5 overflow-auto whitespace-pre-wrap">
             <code class="text-xs">{{ `\n${svgDisplay}` }}</code>

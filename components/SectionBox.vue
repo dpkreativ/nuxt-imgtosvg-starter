@@ -6,8 +6,14 @@
       <slot name="article" />
     </article>
 
-    <div class="w-full flex flex-row-reverse justify-between my-5">
+    <div :class="`w-full my-5 flex ${btnBoxClass}`">
       <slot name="buttons" />
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: ['btnBoxClass'],
+}
+</script>
